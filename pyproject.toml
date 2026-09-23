@@ -14,6 +14,7 @@ authors = [
 dependencies = [
   "numpy",
   "rasterio",
+  "s2-tools",
   "spec-tools[plot]",
 ]
 
@@ -25,6 +26,7 @@ where = ["src"]
 
 [tool.uv.sources]
 spec-tools = { git = "https://github.com/irwright27/spec-tools.git" }
+s2-tools = { path = "../s2-tools", editable = true }
 
 [project.optional-dependencies]
 sbaf = ["spec-tools>=0.1.0"]
