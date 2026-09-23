@@ -7,7 +7,7 @@ name = "uav-tools"
 version = "0.1.0"
 description = "Utilities for processing UAV imagery"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 authors = [
   { name = "Ian Wright" }
 ]
@@ -21,3 +21,6 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.optional-dependencies]
+sbaf = ["spec-tools>=0.1.0"]
